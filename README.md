@@ -1,6 +1,6 @@
 # Employee Attendance & Analytics API
 
-FastAPI + PyMongo implementation for the HROne Employee Attendance & Analytics assignment.
+FastAPI + PyMongo implementation for the Employee Attendance and Analytics assignment.
 
 ## Requirements
 
@@ -17,7 +17,7 @@ python -m venv .venv
 pip install -r requirements.txt
 ```
 
-Set `MONGO_URI` and `MONGO_DB` in your shell or in a local `.env` file. For example, for local MongoDB:
+Set `MONGO_URI` and `MONGO_DB` in your shell or in a local `.env` file. For example the local MongoDB:
 
 ```bash
 # Linux/macOS
@@ -44,11 +44,11 @@ Open `http://localhost:8000/docs` for the interactive API documentation. `/healt
 
 ## Implementation notes
 
-- Instants cross the API boundary as epoch milliseconds; stored datetimes are UTC.
+- Instants cross the API boundary as epoch milliseconds stored datetimes are UTC.
 - Calendar attendance dates and shift times follow the assignment's IST rules.
-- Analytics use MongoDB aggregation pipelines, including database-side date generation and window functions for department trends and late ranking.
-- The database's unique indexes enforce employee-code and attendance-day uniqueness under concurrent requests.
+- Analytics use MongoDB aggregation pipelines, including database side date generation and window functions for department trends and late ranking.
+- The database's unique indexes enforce employee code and attendance day uniqueness under concurrent requests.
 
 ## Submission checklist
 
-Commit `app/main.py`, `requirements.txt`, `README.md`, `REVIEW.md`, `DECISIONS.md`, and the supplied contract/data-model files. Do not commit `.env`, credentials, a virtual environment, or a Dockerfile.
+Commit `app/main.py`, `requirements.txt`, `README.md`, `REVIEW.md`, `DECISIONS.md` and the supplied contract/data-model files. I have not commit `.env`, credentials and  a virtual environment  a Dockerfile as per the required instruction given by assignment.
